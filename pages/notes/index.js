@@ -3,7 +3,7 @@
 import { jsx } from 'theme-ui'
 import Link from 'next/link'
 
-export default () => {
+const Index = () => {
   const notes = new Array(15).fill(1).map((e, i) => ({id: i, title: `This is my note ${i}`}))
 
   return (
@@ -25,4 +25,6 @@ export default () => {
       </div>
     </div>
   )
-}
+};
+
+export default Index;
